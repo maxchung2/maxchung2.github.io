@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>
+    
+      Image Editing | Max Chung
+    
+  </title>
+
+  <meta name="description" content="A Jekyll theme based on the original Hyde and the refreshed Hydeout.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link rel="stylesheet" href="/assets/css/hydeaway.css">
+  <link rel="stylesheet" href="/assets/fa/css/fontawesome-all.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+        <!-- The site icon only exists on viewports
+             wider than tablet -->
+        <div class="site-icon">
+          <a href="/"></a>
+        </div>
+      <h1>
+        <a href="/">
+          Max Chung
+        </a>
+      </h1>
+      <p class="lead">Auxiliary Design Portfolio</p>
+      <!-- If you want the site description listed on the side bar,
+           uncomment the code below. -->
+      <!--
+      <p class="lead no-mobile">
+        A Jekyll theme based on the original Hyde and the refreshed Hydeout.
+      </p>
+      -->
+    </div>
+
+    <nav class="sidebar-nav">
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/web/">Website Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/print/">Print Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/logo/">Logo Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item active" href="/edit/">Image Editing</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/widget/">Widget Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/automation/">Automation</a>
+          
+        
+      
+    </nav>
+
+    <nav class="sidebar-social">
+      <a href="https://www.linkedin.com/in/max-ux" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.medium.com/@glitchytest" target="_blank" title="Medium"><i class="fab fa-medium-m" style="position: relative; top: 2px;"></i></a>
+    </nav>
+
+    <p class="footer">&copy; 2020 Max Chung</p>
+  </div>
+
+</div>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Image Editing</h1>
+  <div class="hr"></div>
+  <link rel="stylesheet" media="screen, projection" href="/assets/css/luminous-basic.css"/>
+<script src="/assets/js/gallery-helper.js"></script>
+
+<script type="module">
+  import LuminousGallery from '/assets/js/LuminousGallery.js';
+  window.addEventListener('load', (event) => {
+    new LuminousGallery(
+      document.querySelectorAll(".foodpak-gallery"),
+      {
+        arrowNavigation: true
+      },
+      {
+        caption: function(trigger) {
+          return trigger.querySelector("img").getAttribute("alt");
+        },
+        onOpen: bodyHideOverflow,
+        onClose: bodyShowOverflow
+      }
+    );
+
+  });
+
+</script>
+
+
+<h2 id="foodpak">Foodpak</h2>
+
+<p>FoodPak is a family run business established in 1968 that provides custom-tailored packaging solutions for clients across the Pacific Northwest and beyond.</p>
+
+<p>For FoodPak's new website, the client supplied some profesionally-taken product photos, however the background needs to be removed so it can be used on all backgrounds. Most of the backgrounds can be removed with colour to alpha, but some tricky ones such as the clamshell tray required a green screen plugin.</p>
+
+<div class="img_row">
+
+	<div class="half">
+    <a href="/assets/img/image-edit/Foodpak 1.jpg" class="foodpak-gallery"><img src="/assets/img/image-edit/thumbnail/Foodpak 1.jpg" alt="Original image without transparency"></a>
+		<div class="caption">Original image without transparency</div>
+	</div>
+	<div class="half">
+    <a href="/assets/img/image-edit/Foodpak 2.png" class="foodpak-gallery" style="background-image: url(../assets/img/image-edit/table.jpg); background-position: center; background-size: cover;"><img src="/assets/img/image-edit/thumbnail/Foodpak 2.png" alt="Edited image with transparency"></a>
+		<div class="caption">Edited image with transparency</div>
+	</div>
+  <div class="hidden">
+    <a href="/assets/img/image-edit/Foodpak 3.jpg" class="foodpak-gallery"><img src="/assets/img/image-edit/Foodpak 3.jpg" alt="Original image without transparency"></a>
+    <a href="/assets/img/image-edit/Foodpak 4.png" class="foodpak-gallery"><img src="/assets/img/image-edit/Foodpak 4.png" alt="Edited image with transparency"></a>
+    <a href="/assets/img/image-edit/Foodpak 5.jpg" class="foodpak-gallery"><img src="/assets/img/image-edit/Foodpak 5.jpg" alt="Original image without transparency"></a>
+    <a href="/assets/img/image-edit/Foodpak 6.png" class="foodpak-gallery"><img src="/assets/img/image-edit/Foodpak 6.png" alt="Edited image with transparency"></a>
+  </div>
+
+</div>
+
+</div>
+
+<div class="only-mobile alert">
+  <a href="#" class="underline">Back to Top &nbsp; <i class="fa fa-arrow-circle-up"></i></a>
+</div>
+
+    </div>
+
+  </body>
+</html>

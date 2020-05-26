@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>
+    
+      Widget Design | Max Chung
+    
+  </title>
+
+  <meta name="description" content="A Jekyll theme based on the original Hyde and the refreshed Hydeout.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link rel="stylesheet" href="/assets/css/hydeaway.css">
+  <link rel="stylesheet" href="/assets/fa/css/fontawesome-all.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+        <!-- The site icon only exists on viewports
+             wider than tablet -->
+        <div class="site-icon">
+          <a href="/"></a>
+        </div>
+      <h1>
+        <a href="/">
+          Max Chung
+        </a>
+      </h1>
+      <p class="lead">Auxiliary Design Portfolio</p>
+      <!-- If you want the site description listed on the side bar,
+           uncomment the code below. -->
+      <!--
+      <p class="lead no-mobile">
+        A Jekyll theme based on the original Hyde and the refreshed Hydeout.
+      </p>
+      -->
+    </div>
+
+    <nav class="sidebar-nav">
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/web/">Website Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/print/">Print Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/logo/">Logo Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/edit/">Image Editing</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item active" href="/widget/">Widget Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/automation/">Automation</a>
+          
+        
+      
+    </nav>
+
+    <nav class="sidebar-social">
+      <a href="https://www.linkedin.com/in/max-ux" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.medium.com/@glitchytest" target="_blank" title="Medium"><i class="fab fa-medium-m" style="position: relative; top: 2px;"></i></a>
+    </nav>
+
+    <p class="footer">&copy; 2020 Max Chung</p>
+  </div>
+
+</div>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Widget Design</h1>
+  <div class="hr"></div>
+  <link rel="stylesheet" media="screen, projection" href="/assets/css/luminous-basic.css"/>
+<script src="/assets/js/gallery-helper.js"></script>
+
+<script type="module">
+  import LuminousGallery from '/assets/js/LuminousGallery.js'
+  window.addEventListener('load', (event) => {
+    new LuminousGallery(
+      document.querySelectorAll(".tempus-gallery"),
+      {
+        arrowNavigation: true
+      },
+      {
+        caption: function(trigger) {
+          return trigger.querySelector("img").getAttribute("alt");
+        },
+        onOpen: bodyHideOverflow,
+        onClose: bodyShowOverflow
+      }
+    );
+
+  });
+
+</script>
+
+<h2 id="cpabc">Tempus Select Dropdown Widget</h2>
+
+<p>Tempus is a web application to help health authorities track grievances and submit these reports to the Health Employers Association every quarter.</p>
+
+<p>While testing the Tempus web application for bugs, I noticed adding a new grievor to a grievance required going through three levels of modals:</p>
+<ul>
+  <li>Add a grievor</li>
+  <li>Add a new grievor</li>
+  <li>Select cost centre</li>
+</ul>
+<p>I decided to challenge myself to come up with a better solution and apply the solution to other cases. The 'Add a grievor' and 'Select cost centre' modals became dropdown menus and the 'Add a grievor' remains as a modal.</p>
+<p>The following images have been formatted for viewing in a gallery and alternative variations are omitted for brevity. <a href="/assets/img/widget-design/Tempus Full.png" target="_blank">Click here to see the original full-sized artboard</a>.</p>
+
+
+<div class="img_row">
+
+  <div class="half">
+    <a href="/assets/img/widget-design/Tempus 1.png" class="tempus-gallery"><img src="/assets/img/widget-design/thumbnail/Tempus 1.png" alt="Indicate required fields"></a>
+    <div class="caption">Indicate required fields</div>
+  </div>
+  <div class="half">
+    <a href="/assets/img/widget-design/Tempus 2.png" class="tempus-gallery"><img src="/assets/img/widget-design/thumbnail/Tempus 2.png" alt="Select grievor dropdown"></a>
+    <div class="caption">Select grievor dropdown</div>
+  </div>
+  <div class="hidden">
+    <a href="/assets/img/widget-design/Tempus 3.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 3.png" alt="Select grievor dropdown continued"></a>
+    <a href="/assets/img/widget-design/Tempus 4.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 4.png" alt="Select grievor dropdown continued"></a>
+    <a href="/assets/img/widget-design/Tempus 5.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 5.png" alt="Select grievor dropdown mobile"></a>
+    <a href="/assets/img/widget-design/Tempus 6.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 6.png" alt="Add grievor modal"></a>
+    <a href="/assets/img/widget-design/Tempus 7.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 7.png" alt="Cost centre dropdown"></a>
+    <a href="/assets/img/widget-design/Tempus 8.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 8.png" alt="Primary article dropdown"></a>
+    <a href="/assets/img/widget-design/Tempus 9.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 9.png" alt="Primary article dropdown mobile"></a>
+    <a href="/assets/img/widget-design/Tempus 10.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 10.png" alt="Supplementary articles dropdown"></a>
+    <a href="/assets/img/widget-design/Tempus 11.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 11.png" alt="Supplementary articles dropdown continued"></a>
+    <a href="/assets/img/widget-design/Tempus 12.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 12.png" alt="Supplementary articles dropdown continued"></a>
+    <a href="/assets/img/widget-design/Tempus 13.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 13.png" alt="Supplementary articles dropdown mobile"></a>
+    <a href="/assets/img/widget-design/Tempus 14.png" class="tempus-gallery"><img src="/assets/img/widget-design/Tempus 14.png" alt="Supplementary articles selected items"></a>
+  </div>
+
+</div>
+
+</div>
+
+<div class="only-mobile alert">
+  <a href="#" class="underline">Back to Top &nbsp; <i class="fa fa-arrow-circle-up"></i></a>
+</div>
+
+    </div>
+
+  </body>
+</html>

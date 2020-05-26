@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>
+    
+      Automation | Max Chung
+    
+  </title>
+
+  <meta name="description" content="A Jekyll theme based on the original Hyde and the refreshed Hydeout.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <link rel="stylesheet" href="/assets/css/hydeaway.css">
+  <link rel="stylesheet" href="/assets/fa/css/fontawesome-all.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+        <!-- The site icon only exists on viewports
+             wider than tablet -->
+        <div class="site-icon">
+          <a href="/"></a>
+        </div>
+      <h1>
+        <a href="/">
+          Max Chung
+        </a>
+      </h1>
+      <p class="lead">Auxiliary Design Portfolio</p>
+      <!-- If you want the site description listed on the side bar,
+           uncomment the code below. -->
+      <!--
+      <p class="lead no-mobile">
+        A Jekyll theme based on the original Hyde and the refreshed Hydeout.
+      </p>
+      -->
+    </div>
+
+    <nav class="sidebar-nav">
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/web/">Website Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/print/">Print Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/logo/">Logo Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/edit/">Image Editing</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/widget/">Widget Design</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item active" href="/automation/">Automation</a>
+          
+        
+      
+    </nav>
+
+    <nav class="sidebar-social">
+      <a href="https://www.linkedin.com/in/max-ux" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.medium.com/@glitchytest" target="_blank" title="Medium"><i class="fab fa-medium-m" style="position: relative; top: 2px;"></i></a>
+    </nav>
+
+    <p class="footer">&copy; 2020 Max Chung</p>
+  </div>
+
+</div>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Automation</h1>
+  <div class="hr"></div>
+  <link rel="stylesheet" media="screen, projection" href="/assets/css/luminous-basic.css"/>
+<script src="/assets/js/gallery-helper.js"></script>
+
+<script type="module">
+  import LuminousGallery from '/assets/js/LuminousGallery.js'
+  window.addEventListener('load', (event) => {
+    new LuminousGallery(
+      document.querySelectorAll(".tempus-gallery"),
+      {
+        arrowNavigation: true
+      },
+      {
+        caption: function(trigger) {
+          return trigger.querySelector("img").getAttribute("alt");
+        },
+        onOpen: bodyHideOverflow,
+        onClose: bodyShowOverflow
+      }
+    );
+
+  });
+
+</script>
+
+<h2 id="tempus">Tempus Regression Testing</h2>
+
+<p>Tempus is a web application to help health authorities track grievances and submit these reports to the Health Employers Association every quarter.</p>
+
+<p>To help detect bugs in the development of the Tempus web application, I wrote a Selenium Java automation program to test the functions on each page. As the program fills form fields and toggles filters, it checks if the results match the inputted data. If not, it logs the error and attempts to continue. Below is a video of the script testing two pages.</p>
+
+<div class="img_row">
+
+  <div class="full">
+    <a class="video">
+    <video width="100%"  controls>
+      <source src="/assets/img/automation/Tempus.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    </a>
+    <div class="caption">Running through Selenium automated tests in the Tempus web application</div>
+  </div>
+
+</div>
+
+</div>
+
+<div class="only-mobile alert">
+  <a href="#" class="underline">Back to Top &nbsp; <i class="fa fa-arrow-circle-up"></i></a>
+</div>
+
+    </div>
+
+  </body>
+</html>
